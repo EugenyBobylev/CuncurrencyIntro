@@ -17,7 +17,7 @@ class MyThread(threading.Thread):
 
 
 def thread_count_down(name, delay):
-    counter = 5
+    counter = 10
     while counter:
         time.sleep(delay)
         print(f'Thread {name} counting down: {counter}...')

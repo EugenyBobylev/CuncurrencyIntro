@@ -4,6 +4,7 @@ from functools import wraps
 def log_it(logfile='log.txt'):
     """
       Декоратор для журналирования обращения к функции
+    :param logfile: имя файла лога
     :param f: функция
     """
     def logging_decorator(f):
@@ -25,7 +26,7 @@ def add_something(x):
     return x + x
 
 
-@log_it(logfile='logging.txt')
+@log_it(logfile='mylog.txt')
 def print_something(msg):
     print(msg)
     return None
